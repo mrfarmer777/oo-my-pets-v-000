@@ -55,6 +55,7 @@ class Owner
   end
 
   def list_pets
+  end
 
   def feed_fish
     @pets[:fishes].each do |fish|
