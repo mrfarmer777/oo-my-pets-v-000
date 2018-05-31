@@ -2,7 +2,7 @@ class Owner
   # code goes here
   @@all=[]
 
-  attr_accessor :pets, @@all, :name
+  attr_accessor :pets, :name
   att_reader :species
 
   def self.owner_count
