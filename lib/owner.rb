@@ -3,7 +3,7 @@ class Owner
   @@all=[]
 
   attr_accessor :pets, :name
-  att_reader :species
+  attr_reader :species
 
   def self.owner_count
     @@all.length
