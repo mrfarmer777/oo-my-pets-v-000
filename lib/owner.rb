@@ -5,7 +5,7 @@ class Owner
   attr_accessor :pets, :name
   attr_reader :species
 
-  def self.owner_count
+  def self.count
     @@all.length
   end
 
