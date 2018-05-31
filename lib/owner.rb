@@ -24,7 +24,7 @@ class Owner
   end
 
   def say_species
-    "I am a #{self.species}"
+    "I am a #{self.species}."
   end
 
   def buy_fish(name)
@@ -32,7 +32,7 @@ class Owner
     @pets[:fishes]<<fish
   end
 
-  def cat(name)
+  def buy_cat(name)
     cat=Cat.new(name)
     @pets[:cats]<<cat
   end
@@ -53,6 +53,8 @@ class Owner
       cat.mood='happy'
     end
   end
+
+  def list_pets
 
   def feed_fish
     @pets[:fishes].each do |fish|
