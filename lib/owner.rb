@@ -17,6 +17,16 @@ class Owner
     @@all.clear
   end
 
+  def initialize(species)
+    @pets={fishes:[],cats:[],dogs:[]}
+    @species=species
+    @@all<<self
+  end
+
+  def say_species
+    "I am a #{self.species}"
+  end
+  
   def buy_fish(name)
     fish=Fish.new(name)
     @pets[:fishes]<<fish
@@ -34,10 +44,6 @@ class Owner
 
 
 
-  def initialize(species)
-    @pets={fishes:[],cats:[],dogs:[]}
-    @species=species
-    @@all<<self
-  end
+  
 
 end
