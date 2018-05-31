@@ -55,6 +55,19 @@ class Owner
   end
 
   def list_pets
+    fish=@pets[:fishes].length
+    cats=@pets[:cats].length
+    dogs=@pets[:dogs].length
+    "I have #{fish} fish, #{dogs} dog(s), and #{cats} cat{s}."
+  end
+
+  def sell_pets
+    @pets.each do |species|
+      species.each do |pet|
+        pet.mood='nervous'
+      end
+      species.clear
+    end
   end
 
   def feed_fish
